@@ -1,0 +1,8 @@
+方式1:使用caches['CACHE配置key]导入具体对象
+from django.core.cache import caches
+cache1 = caches［＇myalias']
+cache2 = caches［＇myalias_2']
+
+
+方式2:
+from django.core.cache import cache 相当于直接引入CACHES配置项中的＇default'项
